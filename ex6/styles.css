@@ -1,0 +1,38 @@
+.Weather header{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+    
+
+
+.header tr {
+    background-color: #009879;
+    color: #ffffff;
+    content: '';
+    width: 100%;
+    display: inline-block;
+    font-size: larger;
+    }
+
+.Weather tr,
+.Weather td {
+    padding: 12px 80px;
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+
+}
+
+
+.Weather td:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.space {
+    color: #009879;
+}
+

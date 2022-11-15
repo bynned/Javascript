@@ -1,0 +1,79 @@
+{
+  "students": [
+    {
+      "id": 0,
+      "name": "Lennier",
+      "exercise_points": 232,
+      "info": ""
+    },
+    {
+      "id": 1,
+      "name": "Sheridan",
+      "exercise_points": 53,
+      "info": ""
+    },
+    {
+      "id": 2,
+      "name": "Mollari",
+      "exercise_points": null,
+      "info": ""
+    },
+    {
+      "id": 3,
+      "name": "Kosh",
+      "exercise_points": 0,
+      "info": "Did not participate"
+    },
+    {
+      "id": 4,
+      "name": "Zathras",
+      "exercise_points": 1,
+      "info": "Species: unknown"
+    },
+    {
+      "name": "Student 100",
+      "exercise_points": 100,
+      "id": 5
+    },
+    {
+      "name": "Student 101",
+      "exercise_points": 101,
+      "id": 6
+    },
+    {
+      "name": "Student 102",
+      "exercise_points": 102,
+      "id": 7
+    },
+    {
+      "name": "Student 103",
+      "exercise_points": 103,
+      "id": 8
+    },
+    {
+      "name": "Student 104",
+      "exercise_points": 104,
+      "id": 9
+    },
+    {
+      "name": "Student 105",
+      "exercise_points": 105,
+      "id": 10
+    },
+    {
+      "name": "Student 106",
+      "exercise_points": 106,
+      "id": 11
+    },
+    {
+      "name": "Student 107",
+      "exercise_points": 107,
+      "id": 12
+    },
+    {
+      "name": "Student 108",
+      "exercise_points": 108,
+      "id": 13
+    }
+  ]
+}

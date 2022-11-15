@@ -1,0 +1,34 @@
+<!-- Task1 of exercise 5 for Basics of web development-->
+<!-- Author: Benny Cascarino-->
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <span id="current-time"></span>
+    <script>
+        var span = document.getElementById('current-time');
+
+        function time() {
+            var d = new Date();
+            var s = d.getSeconds();
+            var m = d.getMinutes();
+            var h = d.getHours();
+            span.textContent =
+                ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
+
+            if (s % 2 == 0) {
+                document.getElementById("current-time").style.backgroundColor = "#deb887";
+            } else {
+                document.getElementById("current-time").style.backgroundColor = "#5f9ea0";
+            }
+        }
+
+        setInterval(time, 1000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!-- Task2 of exercise 5 for Basics of web development-->
+<!-- Author: Benny Cascarino-->
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <style>
+        html {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: aqua;
+            font-family: Arial;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body.click {
+            background: blueviolet;
+        }
+
+        #myrskytab {
+            font-size: xx-large;
+            background-color: aqua;
+            height: 200px;
+            width: 50%;
+            padding: 0;
+            border: none;
+            margin: 0;
+            float: left;
+            position: relative;
+            bottom: 20px;
+        }
+
+        #usvatab {
+            font-size: xx-large;
+            background-color: blueviolet;
+            height: 200px;
+            width: 50%;
+            padding: 0;
+            border: none;
+            margin: 0;
+            float: left;
+            position: relative;
+            bottom: 20px;
+        }
+
+        .tabcontent {
+            animation: fadeEffect 1s;
+        }
+
+        @keyframes fadeEffect {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+    </style>
+
+<body onload= "document.getElementById('myrskytab').click();"> <!--The default tab when opened-->
+
+    <div class="tab">
+        <button class="tablinks" id="myrskytab" onclick="openCat(event, 'Myrsky'); colormyy();">Myrsky</button>
+        <button class="tablinks" id="usvatab" onclick="openCat(event, 'Usva'); colorus();">Usva</button>
+    </div>
+
+    <!--Tab contents-->
+    <div id="Myrsky" class="tabcontent">
+        <h2>Myrsky A.K.A myy</h2>
+        <p>Myrsky is the sleepy one</p>
+    </div>
+
+    <div id="Usva" class="tabcontent">
+        <h2>Usva A.K.A Us</h2>
+        <p>Usva is the energetic one and is always hungry</p>
+    </div>
+
+    <script>
+        
+
+        function openCat(evt, catName) {
+
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i]
+            }
+            document.getElementById(catName).style.display = "block";
+            
+        }
+        // Functions for changing background color
+        function colormyy() {
+            document.body.style.backgroundColor = "aqua";
+        }
+        function colorus() {
+            document.body.style.backgroundColor = "blueviolet";
+        }
+    </script>
+</body>
+</head>
+
+</html>
